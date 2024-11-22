@@ -158,6 +158,17 @@ try:
     plt.text(0.1, 0.0, f'Amplitude Total: {amplitute_total}', fontsize=12)
     plt.title('Medidas Observadas')
 
+    # Quarta posição
+    plt.subplot(2, 2, 4)
+    plt.text(0.1, 0.9, f'Variância: {variancia}'fontsize=12)
+    plt.text(0.1, 0.8, f'Distância var x media: {distancia_var_media}'fontsize=12)
+    plt.text(0.1, 0.7, f'Desvio Padrão: {desvio_padrao}'fontsize=12)
+    plt.text(0.1, 0.6, f'Coef. variação: {coef_variacao}'fontsize=12)
+    # Assimetria de curtose
+    plt.text(0.1, 0.5, f'Assimetria: {assimetria}'fontsize=12)
+    plt.text(0.1, 0.4, f'Curtose: {curtose}'fontsize=12)
+    plt.title('Impressão de medidas estatisticas')
+
     # Desativar os eixos
     plt.axis('off')
 
